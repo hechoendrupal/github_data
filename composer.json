@@ -1,0 +1,17 @@
+{
+  "name": "drupal/github_data",
+  "type": "drupal-module",
+  "description": "This module retriveves some data from github",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/github_data",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/github_data",
+    "source": "http://cgit.drupalcode.org/github_data"
+  },
+  "require": {
+    "knplabs/github-api": "~1.4",
+    "theiconic/php-ga-measurement-protocol": "^2.0"
+  }
+}

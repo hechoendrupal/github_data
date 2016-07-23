@@ -1,0 +1,24 @@
+
+github_data.contributors_controller_index:
+  path: '/contributors'
+  defaults:
+    _controller: '\Drupal\github_data\Controller\ContributorsController::index'
+    _title: 'Contributors'
+  requirements:
+    _permission: 'access content'
+
+github_data.installer_controller_index:
+  path: '/installer'
+  defaults:
+    _controller: '\Drupal\github_data\Controller\InstallerController::index'
+    _title: 'Installer'
+  requirements:
+    _permission: 'access content'
+
+github_data.manifest_controller_index:
+  path: '/manifest.json'
+  defaults:
+    _controller: '\Drupal\github_data\Controller\ManifestController::index'
+    _title: 'Manifest'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+services:
+  github_data.api:
+    class: Drupal\github_data\GitHubDataService
+    arguments: []
+

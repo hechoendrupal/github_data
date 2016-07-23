@@ -1,0 +1,10 @@
+<div class="contributors">
+    {% for contributor in contributors_data %}
+        <div class="contributor">
+          <a href="{{ contributor.html_url }}" target="_blank">
+            <div class="avatar"><img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}"></div>
+            <div class="username">{{ contributor.login }}</div>
+          </a>
+        </div>
+    {% endfor %}
+</div>

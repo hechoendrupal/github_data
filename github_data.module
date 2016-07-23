@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains github_data.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function github_data_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the github_data module.
+    case 'help.page.github_data':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module retriveves some data from github') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function github_data_theme() {
+  $theme['contributors'] = [
+    'template' => 'contributors',
+    'variables' => ['contributors_data' => null],
+  ];
+
+  $theme['statistics'] = [
+    'template' => 'statistics',
+    'variables' => ['statistics_data' => null],
+  ];
+
+  return $theme;
+}
